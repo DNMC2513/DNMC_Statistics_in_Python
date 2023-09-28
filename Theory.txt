@@ -1,0 +1,87 @@
+EXPLORATORY DATA ANALYSIS:
+
+#I. WHAT IS IT?
+- EDA, pioneered by John Turkey in 1977, is considered the FOUNDATION of data science.
+- In contrast to  classical statistic field, which aims to draw inferences, EDA focuses on delivering a data summary.
+- Based on the number of variables involved, there are 3 main types of EDAs:
+    - Univariate analysis: one variable
+    - Bivariate analysis: examines two variables
+    - Multivariate analysis: more than two variables
+
+
+
+#II. UNIVARIATE ANALYSIS:
+
+##1. TYPES OF DATA:
+- Numerical: 
+    + Discrete(count)
+    + Continuous(Measure): RATIO(FIXED 0) & INTERVAL(No fixed 0)
+
+- Categorical:
+    + Binomial(1&0)
+    + Nominal (no order)
+    + Ordinal (order)
+    
+- STRUCTURED or UNstructured:
+    + STRUCTURED data = RECTANGULAR data
+        = a two-dimensional matrix of data with COLUMNs represent FEATURES/CHARACTERISTICS and ROWS represent OBSERVATIONS/RECORDS
+    + UNstructured: graph, timescale, timeseries,...
+    
+##2. ESTIMATE/measure of location: 
+
+!!!ESTIMATE or MEASURE???
+    + These two terminologies refer to the same thing, which is the value calculated from the values at hand, which later can be used to make inferences of the values of the associated features of a broader set of data
+    + Statistics use estimates to integrate the notion of uncertainty for each value
+    + Scientists use the term measure with a focus on using the current meaning of the value
+    + No matter what implications are embedded, we always want to choose the measure that is the MOST ROBUST to represent the dataset
+    
+!!!ROBUST: less likely to be impacted by the OUTLIERS(distinct from others within the same dataset)
+
+i) Mean:
+ii) TRIMMED mean (eschew the effect of outliers)
+iii) WEIGHTED mean: 
+- Take into account the USER-SPECIFIED multitude of each data point within the dataset
+- Allow users to adjust the impact of data from specific groups when needed. For instance, when one group is represented with more extreme values than it is supposed to be, users can assign a lower weight to its records.
+iv) Median: 
+- Sometimes, the median is not really a number that exists within the dataset but the average of two values that split the dataset into two halves of equal size when the whole set is in an ascending or descending order
+- ROBUST to the outliers
+
+##3. ESTIMATE/measure of variability:
+i) Deviation = real number - estimate
+ii) Absolute mean deviation
+iii) Median absolute deviation from the mean:
+- The median of the order range of absolute deviations from all data points to the mean 
+iv) Percentile: a P-th percentile is a number in which P% of the dataset falls below
+v) Interquartile range: IQR = the1st - the3rd 
+- outliers: (-infinity, the1st - 1.5*IQR) U (the3rd + 1.5*IQR, +infinity)
+vi) Range = Max - Min
+
+##4. Expected value:
+- The future value expected based on the probability of each data range to take place 
+=> Weighted mean
+
+##5. Visualisation: 
+- Histogram: the visualisation of a frequency table (CONTIGUOUS)
+- DENSITY PLOT: the distribution of data values through a CONTINUOS line
+- Frequency table: the table in which the dataset is split into equally-spaced ranges and shows the number of data points within each range
+- Bar charts (UNCONTIGOUS): categorical and binary data
+- Box plot: visualise the IQR of a numerical dataset grouped by categorical values
+- Violin plot: represents a single or multiple distributions (density of each data range) of numerical values grouped by categorical values.
+
+
+#III. BIVARIATE & MULTIVARIATE ANALYSIS:
+##1. BIVARIATE ANALYSIS:
+- Correlation: the extent to which the values of a variable affect the other one
+    - Pearson's correlation: NOT robust
+    - Visualisation:
+        - Heatmap
+        - scatter plot
+        - Hexagonal plot: a variation of scatter plot for millions of data points in which data ranges are visualised as hexagons, and the size of each range is represented by the nuances of colours.
+- Boxplot: visualise the IQR of a single or multiple numerical dataset grouped by categorical values
+- Violin plot: represents the distribution (density of each data range) of numerical values grouped by categorical values
+- Bar chart: visualise the relationship between categorical and numberical variables
+
+
+##2. MULTIVARIATE ANALYSIS:
+- 
+ 
